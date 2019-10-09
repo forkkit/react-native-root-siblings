@@ -36,11 +36,13 @@ function RootSiblingsWrapper(props) {
   );
 };
 
+console.log("Registering root siblings: ", global.__rootSiblingsInjected)
 if (!global.__rootSiblingsInjected) {
   AppRegistry.setWrapperComponentProvider(function() {
     return RootSiblingsWrapper;
   });
   global.__rootSiblingsInjected = true;
+  console.log("Registered root siblings: ", global.__rootSiblingsInjected)
 }
 
 let uuid = 0;
