@@ -1,5 +1,5 @@
 {
-  "version": "4.0.0-beta.3",
+  "version": "4.0.0-beta.8",
   "name": "react-native-root-siblings",
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
     "lint": "npx tslint ./src/* --fix",
     "test": "echo no tests",
     "precommit": "lint-staged",
-    "build": "npx tsc"
+    "build": "npx tsc",
+    "prepublishOnly": "npm run build"
   },
   "lint-staged": {
     "*.ts": [
