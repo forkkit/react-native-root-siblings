@@ -8,5 +8,8 @@
     "no-implicit-dependencies": false,
     "prettier": true,
     "interface-name": false
+  },
+  "linterOptions": {
+    "exclude": ["src/types"]
   }
 }
