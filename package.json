@@ -11,7 +11,7 @@
   "scripts": {
     "lint": "npx tslint ./src/* --fix",
     "test": "echo no tests",
-    "precommit": "npm run build",
+    "precommit": "npm run build && git add .",
     "build": "npx tsc",
     "prepublishOnly": "npm run build"
   },
